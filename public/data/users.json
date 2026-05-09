@@ -11,6 +11,6 @@
         "username": "user",
         "password": "user123",
         "name": "Usuario Demo",
-        "role": "cliente"
+        "role": "client"
     }
 ]

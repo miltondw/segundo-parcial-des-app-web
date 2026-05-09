@@ -66,28 +66,22 @@ const router = useRouter()
 async function submit() {
   error.value = ''
   loading.value = true
-  try {
-    const res = await fetch('/data/users.json')
-    const users = await res.json()
-    const found = users.find((u) => u.username === username.value && u.password === password.value)
-    if (found) {
-      // Guardar información del usuario en sessionStorage
-      sessionStorage.setItem('currentUser', JSON.stringify(found))
-      
-      // Redirigir según el rol
-      if (found.role === 'admin') {
-        router.push('/admin')
+    try {
+      const res = await fetch('/data/users.json')
+      const users = await res.json()
+      const found = users.find((u) => u.username === username.value && u.password === password.value)
+      if (found) {
+        // Guardar sesion simulada
+        localStorage.setItem('current_user', JSON.stringify({ id: found.id, username: found.username, name: found.name, role: found.role }))
+        router.push('/dashboard')
       } else {
-        router.push('/client')
+        error.value = 'Credenciales inválidas'
       }
-    } else {
-      error.value = 'Credenciales inválidas. Verifica usuario y contraseña.'
+    } catch (e) {
+      error.value = 'Error cargando usuarios'
+    } finally {
+      loading.value = false
     }
-  } catch (e) {
-    error.value = 'Error al cargar usuarios. Por favor intenta de nuevo.'
-  } finally {
-    loading.value = false
-  }
 }
 </script>
 

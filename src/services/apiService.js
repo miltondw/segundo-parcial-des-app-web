@@ -1,4 +1,5 @@
 const PRODUCTS_KEY = "app_products_v1";
+const RESERVATIONS_KEY = "app_reservations_v1";
 
 async function seedProductsIfNeeded() {
   const existing = localStorage.getItem(PRODUCTS_KEY);
@@ -46,10 +47,31 @@ export async function deleteProduct(id) {
   return true;
 }
 
+export async function getReservations() {
+  return JSON.parse(localStorage.getItem(RESERVATIONS_KEY) || "[]");
+}
+
+export async function createReservation(reservation) {
+  const list = await getReservations();
+  const id = (list.reduce((m, r) => Math.max(m, r.id), 0) || 0) + 1;
+  const item = { id, ...reservation };
+  list.push(item);
+  localStorage.setItem(RESERVATIONS_KEY, JSON.stringify(list));
+  return item;
+}
+
+export async function getReservationsByMovie(movieId) {
+  const list = await getReservations();
+  return list.filter((r) => r.movieId === movieId);
+}
+
 export default {
   seedProductsIfNeeded,
   getProducts,
   createProduct,
   updateProduct,
   deleteProduct,
+  getReservations,
+  createReservation,
+  getReservationsByMovie,
 };

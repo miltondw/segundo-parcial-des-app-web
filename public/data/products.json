@@ -8,23 +8,24 @@
         "image": "https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_SX300.jpg",
         "description": "Dos hombres encarcelados forman un fuerte vínculo a lo largo de los años, encontrando consuelo y eventual redencion a través de actos de decencia común.",
         "showtimes": [
-            { "id": 1, "time": "14:00", "price": 8.0, "availableSeats": 45 },
-            { "id": 2, "time": "17:30", "price": 10.0, "availableSeats": 50 },
-            { "id": 3, "time": "20:00", "price": 12.0, "availableSeats": 35 }
-        ]
-    },
-    {
-        "id": 2,
-        "title": "El Padrino",
-        "genre": "Drama/Crimen",
-        "duration": 175,
-        "rating": "R",
-        "image": "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ1NzM@._V1_SX300.jpg",
-        "description": "El anciano patriarca de una dinastía del crimen organizado transfiere el control de su imperio clandestino a su hijo reacio.",
-        "showtimes": [
-            { "id": 4, "time": "15:00", "price": 9.0, "availableSeats": 48 },
-            { "id": 5, "time": "18:00", "price": 10.5, "availableSeats": 50 },
-            { "id": 6, "time": "21:00", "price": 12.5, "availableSeats": 40 }
+            {
+                "id": 1,
+                "time": "14:00",
+                "price": 8.0,
+                "availableSeats": 45
+            },
+            {
+                "id": 2,
+                "time": "17:30",
+                "price": 10.0,
+                "availableSeats": 50
+            },
+            {
+                "id": 3,
+                "time": "20:00",
+                "price": 12.0,
+                "availableSeats": 35
+            }
         ]
     },
     {
@@ -36,9 +37,24 @@
         "image": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX300.jpg",
         "description": "Cuando la amenaza conocida como el Joker causa estragos en Gotham, Batman debe aceptar una de las mayores pruebas psicológicas y físicas de su vida.",
         "showtimes": [
-            { "id": 7, "time": "16:00", "price": 9.5, "availableSeats": 50 },
-            { "id": 8, "time": "19:00", "price": 11.0, "availableSeats": 50 },
-            { "id": 9, "time": "22:00", "price": 13.0, "availableSeats": 30 }
+            {
+                "id": 7,
+                "time": "16:00",
+                "price": 9.5,
+                "availableSeats": 50
+            },
+            {
+                "id": 8,
+                "time": "19:00",
+                "price": 11.0,
+                "availableSeats": 50
+            },
+            {
+                "id": 9,
+                "time": "22:00",
+                "price": 13.0,
+                "availableSeats": 30
+            }
         ]
     },
     {
@@ -50,9 +66,24 @@
         "image": "https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
         "description": "Las vidas de dos sicarios, un boxeador, un gángster y su esposa se entrelazan en cuatro historias de violencia y redención.",
         "showtimes": [
-            { "id": 10, "time": "14:30", "price": 8.0, "availableSeats": 42 },
-            { "id": 11, "time": "17:45", "price": 10.0, "availableSeats": 50 },
-            { "id": 12, "time": "20:30", "price": 12.0, "availableSeats": 38 }
+            {
+                "id": 10,
+                "time": "14:30",
+                "price": 8.0,
+                "availableSeats": 42
+            },
+            {
+                "id": 11,
+                "time": "17:45",
+                "price": 10.0,
+                "availableSeats": 50
+            },
+            {
+                "id": 12,
+                "time": "20:30",
+                "price": 12.0,
+                "availableSeats": 38
+            }
         ]
     },
     {
@@ -64,9 +95,24 @@
         "image": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg",
         "description": "A un ladrón que roba secretos corporativos mediante tecnología de compartición de sueños se le asigna la tarea inversa de implantar una idea en la mente de un CEO.",
         "showtimes": [
-            { "id": 13, "time": "15:30", "price": 9.5, "availableSeats": 48 },
-            { "id": 14, "time": "18:30", "price": 11.0, "availableSeats": 50 },
-            { "id": 15, "time": "21:30", "price": 13.0, "availableSeats": 35 }
+            {
+                "id": 13,
+                "time": "15:30",
+                "price": 9.5,
+                "availableSeats": 48
+            },
+            {
+                "id": 14,
+                "time": "18:30",
+                "price": 11.0,
+                "availableSeats": 50
+            },
+            {
+                "id": 15,
+                "time": "21:30",
+                "price": 13.0,
+                "availableSeats": 35
+            }
         ]
     },
     {
@@ -78,9 +124,24 @@
         "image": "https://m.media-amazon.com/images/M/MV5BMTk4ODQzNDY3Ml5BMl5BanBnXkFtZTcwODA0NTM4Nw@@._V1_SX300.jpg",
         "description": "Ocho años después del reinado de anarquía del Joker, Batman es obligado a salir del exilio para salvar Gotham de Bane.",
         "showtimes": [
-            { "id": 16, "time": "16:00", "price": 9.5, "availableSeats": 50 },
-            { "id": 17, "time": "19:15", "price": 11.5, "availableSeats": 48 },
-            { "id": 18, "time": "22:15", "price": 13.0, "availableSeats": 28 }
+            {
+                "id": 16,
+                "time": "16:00",
+                "price": 9.5,
+                "availableSeats": 50
+            },
+            {
+                "id": 17,
+                "time": "19:15",
+                "price": 11.5,
+                "availableSeats": 48
+            },
+            {
+                "id": 18,
+                "time": "22:15",
+                "price": 13.0,
+                "availableSeats": 28
+            }
         ]
     },
     {
@@ -92,9 +153,24 @@
         "image": "https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg",
         "description": "Un equipo de exploradores viaja a través de un agujero de gusano en el espacio en un intento de asegurar la supervivencia de la humanidad.",
         "showtimes": [
-            { "id": 19, "time": "14:45", "price": 9.5, "availableSeats": 45 },
-            { "id": 20, "time": "18:00", "price": 11.0, "availableSeats": 50 },
-            { "id": 21, "time": "21:15", "price": 12.5, "availableSeats": 32 }
+            {
+                "id": 19,
+                "time": "14:45",
+                "price": 9.5,
+                "availableSeats": 45
+            },
+            {
+                "id": 20,
+                "time": "18:00",
+                "price": 11.0,
+                "availableSeats": 50
+            },
+            {
+                "id": 21,
+                "time": "21:15",
+                "price": 12.5,
+                "availableSeats": 32
+            }
         ]
     },
     {
@@ -106,9 +182,24 @@
         "image": "https://m.media-amazon.com/images/M/MV5BNWIwODRlZTUtY2U3ZS00Yzg1LWJhNzYtMmZiYmEyNmU1NjMzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
         "description": "Las presidencias de Kennedy y Johnson, la Guerra de Vietnam, el escándalo de Watergate y otros eventos históricos se desarrollan desde la perspectiva de un hombre de Alabama.",
         "showtimes": [
-            { "id": 22, "time": "15:00", "price": 8.0, "availableSeats": 50 },
-            { "id": 23, "time": "17:45", "price": 9.5, "availableSeats": 50 },
-            { "id": 24, "time": "20:30", "price": 11.0, "availableSeats": 42 }
+            {
+                "id": 22,
+                "time": "15:00",
+                "price": 8.0,
+                "availableSeats": 50
+            },
+            {
+                "id": 23,
+                "time": "17:45",
+                "price": 9.5,
+                "availableSeats": 50
+            },
+            {
+                "id": 24,
+                "time": "20:30",
+                "price": 11.0,
+                "availableSeats": 42
+            }
         ]
     },
     {
@@ -120,9 +211,24 @@
         "image": "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
         "description": "Un programador de computación descubre que el mundo que conoce es una simulación creada por máquinas y se une a una rebelión para liberar a la humanidad.",
         "showtimes": [
-            { "id": 25, "time": "16:30", "price": 9.0, "availableSeats": 48 },
-            { "id": 26, "time": "19:00", "price": 10.5, "availableSeats": 50 },
-            { "id": 27, "time": "21:45", "price": 12.0, "availableSeats": 40 }
+            {
+                "id": 25,
+                "time": "16:30",
+                "price": 9.0,
+                "availableSeats": 48
+            },
+            {
+                "id": 26,
+                "time": "19:00",
+                "price": 10.5,
+                "availableSeats": 50
+            },
+            {
+                "id": 27,
+                "time": "21:45",
+                "price": 12.0,
+                "availableSeats": 40
+            }
         ]
     },
     {
@@ -134,9 +240,24 @@
         "image": "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg",
         "description": "Un humilde hobbit de la Comarca y ocho compañeros se embarcan en un viaje para destruir el poderoso Anillo Único y salvar a la Tierra Media.",
         "showtimes": [
-            { "id": 28, "time": "14:00", "price": 9.5, "availableSeats": 50 },
-            { "id": 29, "time": "17:30", "price": 11.0, "availableSeats": 50 },
-            { "id": 30, "time": "20:45", "price": 12.5, "availableSeats": 35 }
+            {
+                "id": 28,
+                "time": "14:00",
+                "price": 9.5,
+                "availableSeats": 50
+            },
+            {
+                "id": 29,
+                "time": "17:30",
+                "price": 11.0,
+                "availableSeats": 50
+            },
+            {
+                "id": 30,
+                "time": "20:45",
+                "price": 12.5,
+                "availableSeats": 35
+            }
         ]
     },
     {
@@ -148,8 +269,18 @@
         "image": "https://m.media-amazon.com/images/M/MV5BNDIzNDU0YzEtYzE5Ni00ZjlkLTk5ZjgtNjM3NWE4YzA3Nzk3XkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300.jpg",
         "description": "Un oficinista insomne y un descarado fabricante de jabón forman un club de lucha clandestino que evoluciona hacia algo mucho más oscuro.",
         "showtimes": [
-            { "id": 31, "time": "19:00", "price": 10.0, "availableSeats": 42 },
-            { "id": 32, "time": "21:30", "price": 12.0, "availableSeats": 38 }
+            {
+                "id": 31,
+                "time": "19:00",
+                "price": 10.0,
+                "availableSeats": 42
+            },
+            {
+                "id": 32,
+                "time": "21:30",
+                "price": 12.0,
+                "availableSeats": 38
+            }
         ]
     }
 ]

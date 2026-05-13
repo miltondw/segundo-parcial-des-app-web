@@ -54,9 +54,63 @@
       </div>
     </div>
 
-    <FormModal v-if="showMovieModal" :isOpen="showMovieModal" :title="'Seleccionar función'" @close="closeMovieModal" @submit="onModalSelectShowtime">
-      <p v-if="modalMovie">{{ modalMovie.title }}</p>
-    </FormModal>
+      <Modal
+        v-if="showMovieModal"
+        :isOpen="showMovieModal"
+        :title="modalMovie?.title ? `Seleccionar función - ${modalMovie.title}` : 'Seleccionar función'"
+        @close="closeMovieModal"
+      >
+        <div v-if="modalMovie" class="row g-4 align-items-start">
+          <div class="col-12 col-md-5">
+            <img
+              :src="modalMovie.image"
+              :alt="modalMovie.title"
+              class="img-fluid rounded-3 shadow-sm w-100"
+            />
+          </div>
+
+          <div class="col-12 col-md-7">
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="badge text-bg-dark">{{ modalMovie.genre }}</span>
+              <span class="badge text-bg-secondary">{{ modalMovie.duration }} min</span>
+              <span class="badge text-bg-info">{{ modalMovie.rating }}</span>
+            </div>
+
+            <p class="text-muted mb-3">{{ modalMovie.description }}</p>
+
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span
+                v-for="showtime in modalMovie.showtimes"
+                :key="showtime.id"
+                class="badge text-bg-light text-dark border"
+              >
+                {{ formatShowtime(showtime.time) }} - {{ formatMoney(showtime.price) }}
+              </span>
+            </div>
+
+            <div class="alert alert-primary mb-0">
+              Selecciona un horario para continuar con la selección de puestos.
+            </div>
+          </div>
+        </div>
+
+        <template #footer>
+          <div class="d-flex flex-wrap gap-2 justify-content-end w-100">
+            <button
+              v-for="showtime in modalMovie?.showtimes || []"
+              :key="showtime.id"
+              type="button"
+              class="btn btn-primary"
+              @click="onModalSelectShowtime(showtime)"
+            >
+              {{ formatShowtime(showtime.time) }}
+            </button>
+            <button type="button" class="btn btn-secondary" @click="closeMovieModal">
+              Cancelar
+            </button>
+          </div>
+        </template>
+      </Modal>
 
     <SeatSelector 
       v-if="showSeatSelector" 
@@ -72,8 +126,8 @@
       v-if="showSuccessModal"
       :isOpen="showSuccessModal"
       :reservationId="lastReservationId"
-      :seatCount="selectedSeats.length"
-      :totalPrice="formatMoney(selectedSeats.length * (currentShowtime?.price || 0))"
+      :seatCount="lastReservationSeatCount"
+      :totalPrice="formatMoney(lastReservationTotalPrice)"
       @close="closeSuccessModal"
     />
 
@@ -229,6 +283,8 @@ const reservationsForMovie = ref(null)
 const showReservations = ref(false)
 const showSuccessModal = ref(false)
 const lastReservationId = ref(null)
+const lastReservationSeatCount = ref(0)
+const lastReservationTotalPrice = ref(0)
 
 const showMovieModal = ref(false)
 const modalMovie = ref(null)
@@ -346,6 +402,8 @@ function closeSeatSelector() {
 
 function closeSuccessModal() {
   showSuccessModal.value = false
+  lastReservationSeatCount.value = 0
+  lastReservationTotalPrice.value = 0
   selectedSeats.value = []
 }
 
@@ -402,6 +460,8 @@ async function confirmSeats(selected){
   })
   
   lastReservationId.value = res.id
+  lastReservationSeatCount.value = selected.length
+  lastReservationTotalPrice.value = totalPrice
   showSeatSelector.value = false
   showSuccessModal.value = true
   selectedSeats.value = []

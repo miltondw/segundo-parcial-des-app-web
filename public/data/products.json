@@ -11,19 +11,19 @@
             {
                 "id": 1,
                 "time": "14:00",
-                "price": 8.0,
+                "price": 8000.0,
                 "availableSeats": 45
             },
             {
                 "id": 2,
                 "time": "17:30",
-                "price": 10.0,
+                "price": 10000.0,
                 "availableSeats": 50
             },
             {
                 "id": 3,
                 "time": "20:00",
-                "price": 12.0,
+                "price": 12000.0,
                 "availableSeats": 35
             }
         ]
@@ -40,19 +40,19 @@
             {
                 "id": 7,
                 "time": "16:00",
-                "price": 9.5,
+                "price": 9500,
                 "availableSeats": 50
             },
             {
                 "id": 8,
                 "time": "19:00",
-                "price": 11.0,
+                "price": 11000.0,
                 "availableSeats": 50
             },
             {
                 "id": 9,
                 "time": "22:00",
-                "price": 13.0,
+                "price": 13000.0,
                 "availableSeats": 30
             }
         ]
@@ -69,19 +69,19 @@
             {
                 "id": 10,
                 "time": "14:30",
-                "price": 8.0,
+                "price": 8000.0,
                 "availableSeats": 42
             },
             {
                 "id": 11,
                 "time": "17:45",
-                "price": 10.0,
+                "price": 10000.0,
                 "availableSeats": 50
             },
             {
                 "id": 12,
                 "time": "20:30",
-                "price": 12.0,
+                "price": 12000.0,
                 "availableSeats": 38
             }
         ]
@@ -98,19 +98,19 @@
             {
                 "id": 13,
                 "time": "15:30",
-                "price": 9.5,
+                "price": 9500,
                 "availableSeats": 48
             },
             {
                 "id": 14,
                 "time": "18:30",
-                "price": 11.0,
+                "price": 11000,
                 "availableSeats": 50
             },
             {
                 "id": 15,
                 "time": "21:30",
-                "price": 13.0,
+                "price": 13000,
                 "availableSeats": 35
             }
         ]
@@ -127,19 +127,19 @@
             {
                 "id": 16,
                 "time": "16:00",
-                "price": 9.5,
+                "price": 9500,
                 "availableSeats": 50
             },
             {
                 "id": 17,
                 "time": "19:15",
-                "price": 11.5,
+                "price": 11500,
                 "availableSeats": 48
             },
             {
                 "id": 18,
                 "time": "22:15",
-                "price": 13.0,
+                "price": 13000,
                 "availableSeats": 28
             }
         ]
@@ -156,19 +156,19 @@
             {
                 "id": 19,
                 "time": "14:45",
-                "price": 9.5,
+                "price": 9500,
                 "availableSeats": 45
             },
             {
                 "id": 20,
                 "time": "18:00",
-                "price": 11.0,
+                "price": 11000,
                 "availableSeats": 50
             },
             {
                 "id": 21,
                 "time": "21:15",
-                "price": 12.5,
+                "price": 12500,
                 "availableSeats": 32
             }
         ]
@@ -185,19 +185,19 @@
             {
                 "id": 22,
                 "time": "15:00",
-                "price": 8.0,
+                "price": 8000,
                 "availableSeats": 50
             },
             {
                 "id": 23,
                 "time": "17:45",
-                "price": 9.5,
+                "price": 9500,
                 "availableSeats": 50
             },
             {
                 "id": 24,
                 "time": "20:30",
-                "price": 11.0,
+                "price": 11000,
                 "availableSeats": 42
             }
         ]
@@ -214,19 +214,19 @@
             {
                 "id": 25,
                 "time": "16:30",
-                "price": 9.0,
+                "price": 9000,
                 "availableSeats": 48
             },
             {
                 "id": 26,
                 "time": "19:00",
-                "price": 10.5,
+                "price": 10500,
                 "availableSeats": 50
             },
             {
                 "id": 27,
                 "time": "21:45",
-                "price": 12.0,
+                "price": 12000,
                 "availableSeats": 40
             }
         ]
@@ -243,19 +243,19 @@
             {
                 "id": 28,
                 "time": "14:00",
-                "price": 9.5,
+                "price": 9500,
                 "availableSeats": 50
             },
             {
                 "id": 29,
                 "time": "17:30",
-                "price": 11.0,
+                "price": 11000,
                 "availableSeats": 50
             },
             {
                 "id": 30,
                 "time": "20:45",
-                "price": 12.5,
+                "price": 12500,
                 "availableSeats": 35
             }
         ]
@@ -272,13 +272,13 @@
             {
                 "id": 31,
                 "time": "19:00",
-                "price": 10.0,
+                "price": 10000,
                 "availableSeats": 42
             },
             {
                 "id": 32,
                 "time": "21:30",
-                "price": 12.0,
+                "price": 12000,
                 "availableSeats": 38
             }
         ]
